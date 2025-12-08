@@ -59,7 +59,7 @@ if(!isset($_SESSION['user_id'])) {
     </nav>
     
     <div class="container mt-5">
-        <h2 class="text-center mb-5">Selamat Datang, <?php echo $_SESSION['full_name']; ?>!</h2>
+        <h2 class="text-center mb-5">Selamat Datang <?php echo $_SESSION['full_name']; ?>!</h2>
         <h4 class="text-center mb-4">Pilih Tipe Pesanan Anda</h4>
         
         <div class="row justify-content-center">
