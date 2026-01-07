@@ -17,7 +17,7 @@ try {
     $stmt->execute([$username, $hashed_password, $full_name, $role]);
 
     echo "<div style='text-align:center; margin-top:50px; font-family:sans-serif;'>";
-    echo "<h1 style='color:green;'>BERHASIL! ✅</h1>";
+    echo "<h1 style='color:green;'>BERHASIL! </h1>";
     echo "<p>Akun Admin berhasil di-reset.</p>";
     echo "<p>Username: <b>admin</b></p>";
     echo "<p>Password: <b>admin123</b></p>";
