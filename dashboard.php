@@ -59,7 +59,7 @@ if(!isset($_SESSION['user_id'])) {
 <body>
     <nav class="navbar navbar-custom navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> GO RESTORAN </a>
+            <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> GO RESTORAN</a>
             <div class="text-white">
                 <i class="fas fa-user-circle"></i> <?php echo $_SESSION['full_name']; ?> 
                 <a href="logout.php" class="btn btn-sm btn-light ms-2">Logout</a>
