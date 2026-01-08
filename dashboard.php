@@ -10,12 +10,13 @@ if(!isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Food Ordering</title>
+    <title>Dashboard - GO RESTORAN</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: url('assets/dashboard_bg.png') no-repeat center center fixed;
+            background-size: cover;
             min-height: 100vh;
         }
         .navbar-custom {
@@ -45,12 +46,20 @@ if(!isset($_SESSION['user_id'])) {
             font-size: 80px;
             margin: 30px 0;
         }
+        .text-outline {
+            text-shadow: 
+                -2px -2px 0 #000,  
+                 2px -2px 0 #000,
+                -2px  2px 0 #000,
+                 2px  2px 0 #000,
+                 4px  4px 5px rgba(0,0,0,0.5); /* Shadow tambahan untuk efek depth */
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-custom navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> Food Ordering System</a>
+            <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> GO RESTORAN </a>
             <div class="text-white">
                 <i class="fas fa-user-circle"></i> <?php echo $_SESSION['full_name']; ?> 
                 <a href="logout.php" class="btn btn-sm btn-light ms-2">Logout</a>
@@ -59,8 +68,8 @@ if(!isset($_SESSION['user_id'])) {
     </nav>
     
     <div class="container mt-5">
-        <h2 class="text-center mb-5">Selamat Datang, <?php echo $_SESSION['full_name']; ?>!</h2>
-        <h4 class="text-center mb-4">Pilih Tipe Pesanan Anda</h4>
+        <h2 class="text-center mb-5 text-white text-outline">Selamat Datang di GO RESTORAN, <?php echo $_SESSION['full_name']; ?>!</h2>
+        <h4 class="text-center mb-4 text-white text-outline">Pilih Tipe Pesanan Anda</h4>
         
         <div class="row justify-content-center">
             <div class="col-md-5 mb-4">
